@@ -1,3 +1,4 @@
+import {CryptoJS} from './core'
 /*
 CryptoJS v3.1.2
 code.google.com/p/crypto-js
@@ -107,3 +108,7 @@ code.google.com/p/crypto-js/wiki/License
         _map: 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/='
     };
 }());
+
+var Base64 = CryptoJS.enc.Base64;
+
+export {Base64}

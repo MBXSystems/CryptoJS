@@ -1,3 +1,5 @@
+import {CryptoJS} from './core'
+
 /*
 CryptoJS v3.1.2
 code.google.com/p/crypto-js
@@ -134,3 +136,7 @@ code.google.com/p/crypto-js/wiki/License
      */
     C.HmacSHA1 = Hasher._createHmacHelper(SHA1);
 }());
+
+var hmacSHA1 = CryptoJS.HmacSHA1;
+
+export {hmacSHA1}

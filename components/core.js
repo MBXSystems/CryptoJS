@@ -7,7 +7,7 @@ code.google.com/p/crypto-js/wiki/License
 /**
  * CryptoJS core components.
  */
-var CryptoJS = CryptoJS || (function (Math, undefined) {
+var CryptoJS = (function (Math, undefined) {
     /**
      * CryptoJS namespace.
      */
@@ -710,3 +710,5 @@ var CryptoJS = CryptoJS || (function (Math, undefined) {
 
     return C;
 }(Math));
+
+export {CryptoJS}

@@ -1,3 +1,4 @@
+import {CryptoJS} from './core'
 /*
 CryptoJS v3.1.2
 code.google.com/p/crypto-js
@@ -252,3 +253,7 @@ code.google.com/p/crypto-js/wiki/License
      */
     C.HmacMD5 = Hasher._createHmacHelper(MD5);
 }(Math));
+
+var MD5 = CryptoJS.MD5;
+
+export {MD5}

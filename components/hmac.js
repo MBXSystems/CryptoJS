@@ -1,3 +1,4 @@
+import {CryptoJS} from './core'
 /*
 CryptoJS v3.1.2
 code.google.com/p/crypto-js
@@ -129,3 +130,7 @@ code.google.com/p/crypto-js/wiki/License
         }
     });
 }());
+
+var HMAC = CryptoJS.algo.HMAC;
+
+export {HMAC}
